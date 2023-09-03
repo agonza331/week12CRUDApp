@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Watchlist</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+
+  </head>
+
+  <body id="body">
+    <h2>Anime Watchlist</h2>
+
+    <!-- Form to add new book -->
+    <form id="animeForm">
+      <input type="hidden" id="animeId" />
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          placeholder="Enter anime title"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="totalEpisodes">Total Episodes:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="totalEpisodes"
+          placeholder="Enter total episodes"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="watchedEpisodes">Watched Episodes:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="watchedEpisodes"
+          placeholder="Enter watched episodes"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br />
+
+    <!-- Table to display books -->
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Total Episodes</th>
+          <th>Watched Episodes</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="animesTableBody">
+        <!-- Movies will be loaded here using jQuery -->
+      </tbody>
+    </table>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
