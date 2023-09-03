@@ -1,3 +1,6 @@
+/*------ READ FIRST:
+*I need to do, json-server --watch db.json* in terminal for it to work properly */
+
 const API_URL = "http://localhost:3000/animes";
 
 /* not sure why the ready and submit button are acting like this now since it was fine before
